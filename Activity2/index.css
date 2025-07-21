@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+#profile-id {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align items vertical centers children (top ot bottom) where as justify content horizontally centers children (left to right)*/
+
+}
+
+/*combinator selector*/
+div img {
+    height: 300px;
+    border-radius: 10%;
+}
+
+.description {
+    padding: 0 20%;
+}

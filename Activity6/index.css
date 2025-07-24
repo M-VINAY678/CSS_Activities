@@ -1,0 +1,29 @@
+.font-variation {
+    font-family: cursive;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width:600px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .font-variation {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

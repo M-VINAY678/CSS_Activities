@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Interactive Dashboard Widgets</title>
+</head>
+
+<body>
+    <div>
+        <h2>You can see the movement of button when hovered</h2>
+        <button>submit</button>
+    </div>
+    <div>
+        <div class="bar"></div>
+        <div class="bar-percentage"></div>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="themeToggle" checked>
+        <span class="slider round"></span>
+    </label>
+    <script>
+        const percent = document.getElementsByClassName('bar-percentage')[0];
+        const bar = document.getElementsByClassName('bar')[0];
+        const interval = setInterval(() => {
+            const barWidth = bar.getBoundingClientRect().width;
+            const containerWidth = bar.parentElement.getBoundingClientRect().width;
+            const result = Math.round((barWidth / containerWidth) * 100);
+            percent.textContent = `The percentage is ${result}%`;
+        }, 100);
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                document.body.style.backgroundColor = 'white';
+            } else {
+                document.body.style.backgroundColor = 'yellow';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

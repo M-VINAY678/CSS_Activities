@@ -1,30 +1,24 @@
 body {
-font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
+
 #main-title {
-color: red;
+    color: red;
 }
+
 .text {
-color: green;
-font-size: 16px;
+    color: green;
+    font-size: 16px;
 }
+
 .special-text {
-font-size: 18px; 
+    font-size: 18px;
 }
+
 #first-paragraph {
- color: orange;
+    color: orange;
 }
+
 .section .text {
-color: black;
+    color: black;
 }
-
-
-
-
-
-
-
-
-
-
-

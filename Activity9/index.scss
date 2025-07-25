@@ -1,0 +1,30 @@
+@use 'profile';
+
+
+body {
+    background-color: white;
+}
+
+#profile-id {
+    
+    /*align items vertical centers children (top ot bottom) where as justify content horizontally centers children (left to right)*/
+    @extend profile12;
+}
+
+/*combinator selector*/
+div img {
+    height: 300px;
+    border-radius: 10%;
+    border: 2px solid ;
+    box-shadow:5px 10px 8px #888888 ;
+}
+.description {
+    padding: 0 20%;
+    text-align: justify;
+}
+.headline{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}

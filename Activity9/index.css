@@ -14,9 +14,6 @@ body {
   background-color: white;
 }
 
-#profile-id {
-  /*align items vertical centers children (top ot bottom) where as justify content horizontally centers children (left to right)*/
-}
 
 /*combinator selector*/
 div img {

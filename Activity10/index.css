@@ -1,0 +1,387 @@
+body {
+    scroll-behavior: smooth;
+    /* background-color:#F2EEE8; */
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.headline-1 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.headline-2 {
+    padding: 15px;
+}
+
+.heading-text {
+    padding-top: 15vh;
+    text-align: center;
+    z-index: 1;
+    font-size: 40px;
+    color: white;
+}
+
+.bg-video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.page-1 {
+    height: 100vh;
+    width: 100%;
+}
+
+.heading-text .bottom-line {
+    padding-top: 40vh;
+}
+
+#page-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 100px;
+    margin: 200px 0;
+}
+
+#page-2 img {
+    height: 800px;
+    width: 500px;
+}
+
+.page-2-text {
+    height: 70%;
+    width: 20%;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+.nav-ele {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.flex-1-items {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+@keyframes sliding {
+
+    0%,
+    33% {
+        background-image: url(images/Screen-Shot-2022-12-07-at-12.24-1.png);
+    }
+
+    34%,
+    66% {
+        background-image: url(images/221027_EJ_nomad_neighborhood_0013-Edit_HIGH_RES_003.webp);
+    }
+
+    67%,
+    100% {
+        background-image: url(images/Kitchens_002.webp);
+    }
+
+}
+
+.slider {
+    height: 70vh;
+    width: 100%;
+    color: white;
+    background-color: #86878d;
+    margin-bottom: 20vh;
+
+    div {
+        height: 15vh;
+        text-align: center;
+        font-size: 25px;
+        align-content: center;
+    }
+}
+
+.slider .slide {
+    height: 55vh;
+    width: 100%;
+    animation-name: sliding;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+#RESIDENCES {
+    width: 100%;
+    padding: 100px;
+
+    .residences-heading {
+        margin-bottom: 30px;
+    }
+}
+
+.residences-img-des {
+    width: 600px;
+    text-align: justify;
+}
+
+.res-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .res-flex-items {
+        flex: 1;
+    }
+
+    img {
+        height: 400px;
+        width: 600px;
+
+    }
+}
+
+#AMENITIES {
+    width: 100%;
+    height: 80vh;
+    background-color: #2b3447;
+    position: relative;
+    overflow: hidden;
+
+    .amenities-heading {
+        font-size: large;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .amenities-description {
+        padding: 0 25%;
+        text-align: justify;
+    }
+}
+
+.amenities-flex {
+    height: 65vh;
+    background-color: #2b3447;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    color: white;
+    animation: slideLeft 10s linear infinite;
+
+}
+
+.amenities-flex img {
+    width: 600px;
+}
+
+.amenities-footer {
+    background-color: #86878d;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    align-content: center;
+}
+
+.amenities-text {
+    position: absolute;
+    color: white;
+    left: 48%;
+    top: 55px
+}
+
+#NOMAD {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    margin: 200px;
+
+    .nomad-items {
+        flex: 1;
+    }
+
+    .nomad-image {
+        position: relative;
+        height: 600px;
+    }
+
+    .NoMad-description {
+        width: 200px;
+
+        .NOMAD-TITLE {
+            text-align: center;
+            margin: 30px
+        }
+    }
+
+    .image-overlap {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+.map-heading {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map-image {
+    img {
+        width: 100%;
+        height: 500px;
+    }
+
+    padding: 0px 100px;
+    object-fit: cover;
+}
+
+#AVAILABILITY {
+    margin: 100px;
+    margin-top: 200px;
+
+    table {
+        text-align: center;
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+        margin-top: 100px;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: inherit;
+    }
+
+    tbody tr:hover {
+        background-color: #89a9ef;
+
+        button {
+            background-color: #89a9ef;
+        }
+    }
+
+    table,
+    td,
+    th {
+        padding: 20px 70px;
+    }
+
+    table th {
+        border-bottom: 1px solid black;
+    }
+
+}
+
+.card-style {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.response-table {
+    display: table;
+}
+
+.table-card {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    .response-table {
+        display: none;
+    }
+
+    .table-card {
+        display: block;
+    }
+}
+
+#INQUIRE {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+
+    p {
+        width: 350px;
+    }
+
+    img {
+        margin: 20px;
+    }
+}
+
+.inqurie-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+
+}
+
+.common-s {
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid black;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    background-color: inherit;
+}
+
+.foot {
+    padding: 0 15%;
+    text-align: justify;
+    margin: 100px;
+
+    .footer-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50p;
+
+        img {
+            padding: 20px 30px;
+        }
+
+    }
+}

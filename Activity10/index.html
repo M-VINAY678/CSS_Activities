@@ -51,8 +51,7 @@
             views of the Manhattan skyline. Interiors
             are graced with oversized windows and ceilings reaching ten feet, complemented by warm woods and elegant
             natural stones.</div>
-        <button style="border: 1px solid black;background-color: white;color: black;margin-top: 20px;">FACT
-            SHEET</button>
+        <button>FACT SHEET</button>
         <div>
             <div class="res-flex">
                 <div class="res-flex-items">
@@ -187,22 +186,46 @@
         </table>
         <div class="table-card">
             <div class="card-style">
-                <div>RESIDENCE 46B</div>
-                <div>Bed/Bath 3 / 3.5</div>
-                <div>INT./EXT.SQ FT 2,333 / 206</div>
-                <div>EXPOSURES N, S, E</div>
+                <div class="card-style_item">
+                    <div>RESIDENCE 46B</div>
+                    <div>Bed/Bath 3 / 3.5</div>
+                    <div>INT./EXT.SQ FT 2,333 / 206</div>
+                    <div>EXPOSURES N, S, E</div>
+                </div>
+                <div class="card-style_item">
+                    <div>PRICE $9,990,000</div>
+                    <div>MONTHLY CC $3,620</div>
+                    <div>MONTHLY RE TAX $5,463</div>
+                    <div><a href="#">FLOOR PLAN</a></div>
+                </div>
             </div>
             <div class="card-style">
-                <div>RESIDENCE PH53</div>
-                <div>Bed/Bath 4 / 4</div>
-                <div>INT./EXT.SQ FT 3,870</div>
-                <div>EXPOSURES N, E, W</div>
+                <div class="card-style_item">
+                    <div>RESIDENCE PH53</div>
+                    <div>Bed/Bath 4 / 4</div>
+                    <div>INT./EXT.SQ FT 3,870</div>
+                    <div>EXPOSURES N, E, W</div>
+                </div>
+                <div class="card-style_item">
+                    <div>PRICE $9,990,000</div>
+                    <div>MONTHLY CC $3,620</div>
+                    <div>MONTHLY RE TAX $5,463</div>
+                    <div><a href="#">FLOOR PLAN</a></div>
+                </div>
             </div>
             <div class="card-style">
-                <div>RESIDENCE PH55</div>
-                <div>Bed/Bath 4 / 4.5</div>
-                <div>INT./EXT.SQ FT 4,520 / 780</div>
-                <div>EXPOSURES N, E, S, W</div>
+                <div class="card-style_item">
+                    <div>RESIDENCE PH55</div>
+                    <div>Bed/Bath 4 / 4.5</div>
+                    <div>INT./EXT.SQ FT 4,520 / 780</div>
+                    <div>EXPOSURES N, E, S, W</div>
+                </div>
+                <div class="card-style_item">
+                    <div>PRICE $9,990,000</div>
+                    <div>MONTHLY CC $3,620</div>
+                    <div>MONTHLY RE TAX $5,463</div>
+                    <div><a href="#">FLOOR PLAN</a></div>
+                </div>
             </div>
         </div>
     </div>
@@ -221,19 +244,26 @@
             <p>Fredrik Eklund and John Gomes of
                 The Eklund|Gomes Team</p>
         </div>
-        <div class="inqurie-side">
+        <form action="#">
+            <div class="inqurie-side">
             <div class="headline-1">Inquire</div>
             <div>
-                <input class="common-s" type="text" placeholder="FIRST NAME*">
-                <input class="common-s" type="text" placeholder="LAST NAME*">
+                <input class="common-s" type="text" required placeholder="FIRST NAME*">
+                <input class="common-s" type="text" required placeholder="LAST NAME*">
             </div>
-            <input class="common-s" type="email" placeholder="EMAIL ADDRESS*">
+            <input class="common-s" type="email" placeholder="EMAIL ADDRESS* " required >
             <input class="common-s" type="tel" placeholder="TELEPHONE">
             <div class="rounded-input">
                 <p>Desired Residence Type</p>
-                <label for="container"><input type="radio">1 BEDROOM</label>
-                <label for="container"><input type="radio">2 BEDROOM</label>
-                <label for="container"><input type="radio">3 BEDROOM</label>
+                <label for="bedroom1">
+                    <input type="radio" id="bedroom1" name="residence"> 1 BEDROOM
+                </label>
+                <label for="bedroom2">
+                    <input type="radio" id="bedroom2" name="residence"> 2 BEDROOM
+                </label>
+                <label for="bedroom3">
+                    <input type="radio" id="bedroom3" name="residence"> 3 BEDROOM
+                </label>
             </div>
             <select class="common-s" name="price" id="price">
                 <option value="Price-Range">PRICE RANGE</option>
@@ -250,11 +280,16 @@
             </select>
             <div>
                 <p>ARE YOU A BROKER?</p>
-                <label for="container"><input type="radio">YES</label>
-                <label for="container"><input type="radio">NO</label>
+                <label for="yes">
+                    <input type="radio" id="yes" name="broker"> YES
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="broker"> NO
+                </label>
             </div>
-            <button class="button">SUBMIT</button>
+            <button class="button" type="submit">SUBMIT</button>
         </div>
+        </form>
     </div>
     <div class="foot">
         <div>

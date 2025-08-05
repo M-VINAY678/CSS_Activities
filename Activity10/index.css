@@ -4,6 +4,11 @@ body {
     max-width: 100%;
 }
 
+button:hover {
+    color: white;
+    background-color: black;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -140,9 +145,22 @@ a {
 }
 
 #RESIDENCES {
-    width: 100%;
-    padding: 100px;
-
+    width: 90%;
+    padding-left: 100px;
+    
+    .residences-text{
+        text-align: justify;
+        width: 30%;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        margin: 20px 0;
+    }
+        button:hover {
+            color: white;
+            background-color: black;
+        }
     .residences-heading {
         margin-bottom: 30px;
     }
@@ -285,15 +303,19 @@ a {
 
     button {
         width: 100px;
-        height: 30px;
-        background-color: inherit;
+        height: 50px;
     }
 
     tbody tr:hover {
-        background-color: #89a9ef;
+        background-color: #a5b7d3;
 
         button {
-            background-color: #89a9ef;
+            background-color: #a5b7d3;
+        }
+
+        button:hover {
+            color: white;
+            background-color: black;
         }
     }
 
@@ -310,8 +332,21 @@ a {
 }
 
 .card-style {
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    display: flex;
     padding: 20px;
     border-bottom: 1px solid black;
+
+    .card-style_item {
+        flex: 1;
+    }
 }
 
 .response-table {
